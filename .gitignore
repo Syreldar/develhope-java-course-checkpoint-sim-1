@@ -4,3 +4,4 @@ develhope-exercises.iml
 /out
 *.iml
 pom.xml
+target/*
