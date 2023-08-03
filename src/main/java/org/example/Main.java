@@ -13,7 +13,7 @@ public class Main
         }
     }
 
-    public static String NthLettersChains(String[] arr, int n, int numLetters)
+    public static String nthLettersChains(String[] arr, int n, int numLetters)
     {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++)
@@ -36,16 +36,12 @@ public class Main
 
         String[] lastNames = new String[people.length];
         for (int i = 0; i < people.length; i++)
-        {
             lastNames[i] = people[i].getLastName();
-        }
 
         printFirstNLetters(lastNames, NUM_LETTERS);
-        System.out.printf("%s%n", NthLettersChains(lastNames, 2, NUM_LETTERS));
+        System.out.printf("%s%n", nthLettersChains(lastNames, 2, NUM_LETTERS));
 
         for (Person person : people)
-        {
             System.out.printf("%d%n", person.getAge());
-        }
     }
 }
